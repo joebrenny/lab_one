@@ -85,27 +85,32 @@
 </body>
   <script src="data.js"></script>
   <script>
-    ourTotal=0;
-    console.log(list.length);
+    listObject=list
+    //ourTotal=0;
+    //console.log(list.length);
     // go throught the loop to get data
-    for(var i=0; i < list.length; i++) {
-      ourTotal += list[i].networth;
-      console.log(ourTotal);
+    //for(var i=0; i < list.length; i++) {
+     // ourTotal += list[i].networth;
+     // console.log(ourTotal);
       
+      listObject.sort(function(a,b) {
+                    return a.rank - b.rank;
+                });  
         
-        console.log(list[i].networth);
-        var listofnw =list[i].networth;
-        var average = list[i].networth/i;
-        var age = list[i].age/i;
-        for(var x=0;x>list[i].networth;i++){
-          richest=x
-          console.log(richest);
-        }
-        
-    }
-    document.getElementById("output").innerHTML=ourTotal;
-    document.getElementById("outputtwo").innerHTML=average;
-    document.getElementById("outputthree").innerHTML=age;
+        //console.log(list[i].networth);
+        //var listofnw =list[i].networth;
+        //var average = list[i].networth/i;
+        //var age = list[i].age/i;
+        //for(var x=0;x>list[i].networth;i++){
+          //richest=x
+          console.log(listObject);
+          
+       // }
+      
+    //}
+    //document.getElementById("output").innerHTML=ourTotal; //totla net worth average 
+    //document.getElementById("outputtwo").innerHTML=average;  //average net worth
+    //document.getElementById("outputthree").innerHTML=age;
     //console.log(listofnw);
     //console.log(average);var myBarChart = new Chart(ctx, {
     
@@ -116,12 +121,12 @@
 
     // The data for our dataset
     data: {
-        labels: ["Jeff Benzo", "Bill Gates", "Warren Buffet", "Mark Zuckerberg", "Larry Ellison", "Larry Page", "Charles Koch"],
+        labels: [listObject[0].name, listObject[1].name, listObject[2].name, listObject[3].name, listObject[4].name, listObject[5].name, listObject[6].name],
         datasets: [{
             label: "top seven billionares net worth",
             backgroundColor: 'rgb(190, 190, 200)',
             borderColor: 'rgb(255, 99, 132)',
-            data: [160000000000, 97000000000, 61000000000, 61000000000, 58400000000, 53800000000, 53500000000],
+            data: [listObject[0].networth, listObject[1].networth, listObject[2].networth, listObject[3].networth, listObject[4].networth, listObject[5].networth, listObject[6].networth],
         }]
     },
 

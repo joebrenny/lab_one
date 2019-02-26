@@ -47,7 +47,7 @@ var list=[
     {
       "rank": 6,
       "name": "Larry Page",
-      "networth": 5380000000,
+      "networth": 53800000000,
       "age": 45,
       "state": "California",
       "source": "Google",
@@ -87,12 +87,12 @@ var list=[
       "age": "New York",
       "state": "Bloomberg LP",
       "source": 5,
-      "philanthorpy": ""
+      "philanthorpy": "--"
     },
     {
       "rank": 11,
       "name": "Jim Walton",
-      "networth": 422000000,
+      "networth": 42200000000,
       "age": 70,
       "state": "Arkansas",
       "source": "Walmat",
@@ -118,12 +118,13 @@ var list=[
     },
     {
       "rank": 14,
-      "name": "Steve Ballmer 42300000000",
-      "networth": 62,
-      "age": "Washington",
-      "state": "Microsoft",
-      "source": 4,
-      "philanthorpy": ""
+      "name": "Steve Ballmer", 
+      "networth": 42300000000,
+      
+      "age":  62,
+      "state":"Washington" ,
+      "source":"Microsoft" ,
+      "philanthorpy": 4
     },
     {
       "rank": 15,
